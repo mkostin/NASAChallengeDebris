@@ -24,6 +24,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        System.setProperty("java.util.Arrays.useLegacyMergeSort", "true");
         LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
         cfg.title = "my.gdx.game";
         cfg.useGL20 = false;
@@ -36,15 +37,16 @@ public class Main {
 
     public static List<Placemark> getDebris() {
         try {
-//            File baseDirectory = new File("D:\\4\\base");
-//            File[] bases = baseDirectory.listFiles();
+            File baseDirectory = new File("D:\\4\\base");
+            File[] bases = baseDirectory.listFiles();
             List<Placemark> placemarks = new ArrayList<Placemark>();
-//                File base = bases[0];
-            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("E:/base-10000.dat"));
+            for (int i = 0; i < 50; i++) {
+                File base = bases[i];
+                ObjectInputStream ois = new ObjectInputStream(new FileInputStream(base));
             placemarks.addAll((List) ois.readObject());
             ois.close();
 //                break;
-
+            }
             return placemarks;
         } catch (Exception e) {
             e.printStackTrace();
