@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Description.java" changelist="d9f7be5a-78f8-428d-9f0f-5e6c374e3176" time="1397363679931" ignored="false" />
     <file path="/Main.java" changelist="d9f7be5a-78f8-428d-9f0f-5e6c374e3176" time="1397373416116" ignored="false" />
-    <file path="/MyGDXSattelite.java" changelist="d9f7be5a-78f8-428d-9f0f-5e6c374e3176" time="1397374970340" ignored="false" />
+    <file path="/MyGDXSattelite.java" changelist="d9f7be5a-78f8-428d-9f0f-5e6c374e3176" time="1397379118065" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="MyGDXSattelite.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/me/mygdxgame/MyGDXSattelite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="20" selection-start="4585" selection-end="4585" vertical-scroll-proportion="0.58536583">
+            <state line="96" column="65" selection-start="3571" selection-end="3571" vertical-scroll-proportion="1.5783972">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,7 +101,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/me/mygdxgame/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="41" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+            <state line="44" column="67" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,6 +185,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sattelite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sattelite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sattelite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,14 +636,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/me/mygdxgame/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="41" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+        <state line="44" column="67" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/me/mygdxgame/MyGDXSattelite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="20" selection-start="4585" selection-end="4585" vertical-scroll-proportion="0.58536583">
+        <state line="96" column="65" selection-start="3571" selection-end="3571" vertical-scroll-proportion="1.5783972">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

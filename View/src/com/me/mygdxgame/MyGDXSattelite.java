@@ -41,8 +41,12 @@ public class MyGDXSattelite implements ApplicationListener {
     public Cubemap cubemap;
 
 
+
     @Override
     public void create() {
+
+        Gdx.graphics.setContinuousRendering(false);
+        Gdx.graphics.requestRendering();
 
         texture = new Texture(Gdx.files.internal("textures/eath_texture.png"));
 
@@ -61,26 +65,27 @@ public class MyGDXSattelite implements ApplicationListener {
         cam.position.set(150f, 150f, 150f);
         cam.lookAt(0, 0, 0);
         cam.near = 1f;
-        cam.far = 300f;
+        cam.far = 1300f;
         cam.update();
         ObjLoader loader = new ObjLoader();
         ModelBuilder modelBuilder = new ModelBuilder();
-//        model = loader.loadModel(Gdx.files.internal("textures/Nuka_Cola_Fridge.obj"));
-//        Texture texture = new Texture(Gdx.files.internal("textures/Nuka_Cola_Fridge.mtl"), Pixmap.Format.RGBA4444, false);
-        Material mat = new Material("mat", new TextureAttribute(TextureAttribute.Bump, texture));
-        model = modelBuilder.createSphere(128f, 128f, 128f, 20, 20,
-                mat,
-                VertexAttributes.Usage.Position | VertexAttributes.Usage.Normal | VertexAttributes.Usage.TextureCoordinates);
+        model = loader.loadModel(Gdx.files.internal("textures/Earth.obj"));
+
+       // Material mat = new Material("mat", new TextureAttribute(TextureAttribute.Bump, texture));
+//        model = modelBuilder.createSphere(128f, 128f, 128f, 20, 20,
+//                mat,
+//                VertexAttributes.Usage.Position | VertexAttributes.Usage.Normal | VertexAttributes.Usage.TextureCoordinates);
 
         instance = new ModelInstance(model);
-        instance.materials.get(0).set(mat);
+        instance.transform.scale(100f,100f,100f);
+        System.out.println();
 
         for (Placemark pm : debris) {
 
-            debrisModel = modelBuilder.createSphere(7f, 7f, 7f, 20, 20,
-                    new Material(),
-                    VertexAttributes.Usage.Position | VertexAttributes.Usage.Normal | VertexAttributes.Usage.TextureCoordinates);
+            debrisModel = loader.loadModel(Gdx.files.internal("textures/imac/imac.obj"));
             ModelInstance mi = new ModelInstance(debrisModel);
+
+            mi.transform.scale(5f,5f,5f);
             debrisInstance.add(mi);
             mi.transform.translate((float) pm.coordinate.x / 100f, (float) pm.coordinate.y / 100f, (float) pm.coordinate.z / 100f);
         }
@@ -98,7 +103,7 @@ public class MyGDXSattelite implements ApplicationListener {
         Gdx.gl.glActiveTexture(0);
         modelBatch.begin(cam);
         instance.transform.rotate(0.2f, -0.2f, 0.2f, 0.11f);
-
+        Gdx.gl.glEnable(GL11.GL_MULTISAMPLE);
         Gdx.gl.glActiveTexture(GL10.GL_TEXTURE);
         Gdx.gl.glEnable(GL10.GL_TEXTURE_2D);
         texture.bind();
