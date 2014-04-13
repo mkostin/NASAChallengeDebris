@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="com.badlogicgames.gdx:gdx-backend-lwjgl:0.9.9" type="repository">
+    <properties maven-id="com.badlogicgames.gdx:gdx-backend-lwjgl:0.9.9" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gdx-backend-lwjgl-0.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gdx-0.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gdx-openal-0.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-platform-2.9.0-natives-windows.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-platform-2.9.0-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-platform-2.9.0-natives-osx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jinput-2.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jutils-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jinput-platform-2.0.5-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jinput-platform-2.0.5-natives-windows.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jinput-platform-2.0.5-natives-osx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jlayer-1.0.1-gdx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jorbis-0.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl_util-2.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

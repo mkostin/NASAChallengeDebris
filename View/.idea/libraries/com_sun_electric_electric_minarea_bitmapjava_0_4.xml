@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.sun.electric:electric-minarea-bitmapjava:0.4" type="repository">
+    <properties maven-id="com.sun.electric:electric-minarea-bitmapjava:0.4" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IdeaProjects/sattelite/lib/electric-minarea-bitmapjava-0.4.jar!/" />
+      <root url="jar://$USER_HOME$/IdeaProjects/sattelite/lib/electric-minarea-api-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
